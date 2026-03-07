@@ -1,0 +1,198 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Impedir seleção de texto */
+body {
+    background-color: #F5F5F5;
+    font-family: 'Poppins', sans-serif;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+    overflow-x: hidden;
+}
+
+/* Impedir salvar imagem arrastando */
+img {
+    pointer-events: none;
+}
+
+.quadrado-pagamento{
+    width: 92%;
+    max-width: 900px;
+    height: 800px; /* você pode ajustar depois */
+    background: white;
+    border: 1px solid #DFDFDF; /* contorno fino */
+    border-radius: 4px; /* arredondado bem pouco */
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08); /* sombra suave */
+    margin: 40px auto; /* centraliza */
+    margin-top: 19px;
+    position: relative;
+}
+
+.valor-produto-pagamento{
+    padding: 18px;
+    font-size: 16px;
+    color: #7F7F7F;
+    text-align: center;
+}
+
+.preco-destaque{
+    font-weight: 600;
+    color: #17A2B8;
+}
+
+.logo-pix {
+    width: 50px;
+    margin-left: 6px;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+.imagem-pagamento {
+    width: 92%;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.linha-divisoria {
+    width: 91%;
+    height: 1px;
+    background: #F3F3F3;
+    margin: 12px auto;
+}
+
+.texto-pix {
+    width: 92%;
+    margin: 23px auto;
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.passo-pix {
+    width: 92%;
+    margin: 4px auto;
+    font-size: 14px;
+    color: #333;
+}
+
+.caixa-pix{
+    width: 92%;
+    height: 77px;
+    background: #F8F9FA;
+    border: 1px solid #DFDFDF;
+    border-radius: 6px;
+    margin: 8px auto;
+    position: relative;
+}
+
+.botao-copiar{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    padding: 6px 8px;
+    background: #FFFFFF;
+    border: 1px solid #DFDFDF;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 600;
+    transition: all 0.15s ease;
+}
+
+.botao-copiar:active{
+    transform: translateY(-50%) translateY(2px);
+    background: #F5F5F5;
+}
+
+.botao-copiar .material-symbols-outlined{
+    font-size: 18px;
+    color: #000;
+}
+
+.codigo-pix{
+    position: absolute;
+    left: 12px;
+    right: 110px;
+    top: 12px;
+    bottom: 12px;
+    font-size: 12px;
+    color: #333;
+    overflow-y: auto;
+    overflow-x: hidden;
+    word-break: break-all;
+}
+
+.mensagem-copiado{
+    margin-top: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #28A745;
+    font-weight: 700;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.botao-confirmar {
+    width: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin: 10px auto;
+    padding: 9px;
+    background: #28A745;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.botao-confirmar .material-symbols-outlined {
+    font-size: 20px;
+}
+
+.titulo-como-funciona {
+    width: 92%;
+    margin: 25px auto;
+    margin-left: 19px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+.passo-como-funciona {
+    width: 93%;
+    margin: 27px auto;
+    margin-left: 19px;
+    font-size: 14px;
+    color: #333;
+    margin-top: -17px;
+}
+
+.video-fundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px) brightness(0.4);
+    z-index: -1;
+    pointer-events: none;
+}
